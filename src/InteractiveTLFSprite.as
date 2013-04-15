@@ -306,6 +306,8 @@ package {
 			var textWidth:Number  = Math.min(2048, contentBounds.width*scale);
 			var textHeight:Number = Math.min(2048, contentBounds.height*scale);
 			
+			textWidth = textWidth ==0 ?compositionWidth: textWidth;
+			textHeight = textHeight ==0 ?compositionHeight: textHeight;
 			
 			
 			var bitmapData:BitmapData = new BitmapData(textWidth, textHeight, true, 0x0);
